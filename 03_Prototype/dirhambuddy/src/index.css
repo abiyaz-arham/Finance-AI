@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-500: #0d9488;
+  --color-teal-600: #0f766e;
+  --color-teal-950: #042f2e;
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #fcf6e8;
+  --color-sand-500: #d97706;
+  --color-sand-600: #b45309;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-[#F8FAFC] text-slate-800 font-sans selection:bg-teal-100;
+  }
+}
+
+/* Accent Gradient and Theme utility presets */
+.accent-gradient {
+  background: linear-gradient(135deg, #2DD4BF 0%, #0D9488 100%);
+}
+
+.status-pill {
+  @apply rounded-full px-3 py-1 text-[11px] font-semibold uppercase tracking-wider;
+}
+
+/* Custom transitions and soft animations */
+.transition-all-custom {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+

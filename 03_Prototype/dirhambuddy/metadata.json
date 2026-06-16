@@ -1,0 +1,6 @@
+{
+  "name": "DirhamBuddy",
+  "description": "An interactive, friendly financial literacy app for UAE Gen-Z and residents, simplifying fees, central bank regulations, and featuring an AI money guide.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
